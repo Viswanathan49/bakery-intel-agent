@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakery Intel Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 37C20 28.7157 26.7157 22 35 22H44V31C44 39.2843 37.2843 46 29 46H20V37Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M25 19C30 19 34 23 34 28V31H31C26 31 22 27 22 22V19H25Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Bakery Intel Agent</h1>
+          <p>Bakery expansion copilot</p>
+        </div>
+      </div>
+
+      <button class="new-chat" id="newChatBtn">+ New analysis</button>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">☾</button>
+
+      <section class="nav-group">
+        <h2>Recent sessions</h2>
+        <div class="session-list">
+          <div class="session-item active">
+            <strong>Anna Nagar launch</strong>
+            <span>Footfall and rival scan</span>
+          </div>
+          <div class="session-item">
+            <strong>Velachery pricing</strong>
+            <span>Premium pastry bands</span>
+          </div>
+          <div class="session-item">
+            <strong>OMR commute map</strong>
+            <span>Delivery route logic</span>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <main class="workspace" id="main">
+      <header class="topbar">
+        <div>
+          <h2>Location strategy workspace</h2>
+          <p>Blend BigQuery bakery signals with Maps-based competition analysis.</p>
+        </div>
+        <div class="status-pill"><span class="dot"></span> Agent ready</div>
+      </header>
+
+      <section class="chat-scroll" id="messages">
+        <article class="message assistant">
+          <div class="message-label">CrumbIQ</div>
+          <div class="bubble">
+            <p>I can help evaluate bakery expansion opportunities using sales history, foot traffic, pricing, and nearby competition.</p>
+          </div>
+        </article>
+
+        <article class="message user">
+          <div class="message-label">You</div>
+          <div class="bubble">
+            <p>Which locality should we evaluate first for a premium bakery launch in Chennai?</p>
+          </div>
+        </article>
+
+        <article class="message assistant">
+          <div class="message-label">CrumbIQ</div>
+          <div class="bubble">
+            <p>Start with Anna Nagar, Velachery, and OMR. I’d compare store sales history and pricing in BigQuery, then inspect competitor density and travel convenience on Maps.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="composer">
+        <form class="composer-shell" id="chatForm">
+          <textarea id="chatInput" placeholder="Ask about bakery locations, pricing, competitor density, or route planning..."></textarea>
+          <button class="send-btn" type="submit" aria-label="Send">→</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="insights">
+      <section>
+        <h2 class="panel-title">Quick metrics</h2>
+        <div class="metrics">
+          <div class="metric">
+            <span>Foot traffic index</span>
+            <strong>84</strong>
+          </div>
+          <div class="metric">
+            <span>Avg pastry price</span>
+            <strong>₹145</strong>
+          </div>
+          <div class="metric">
+            <span>Sales trend</span>
+            <strong>+12.4%</strong>
+          </div>
+          <div class="metric">
+            <span>Nearby rivals</span>
+            <strong>9</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="panel-title">Suggested prompts</h2>
+        <ul>
+          <li>Compare Anna Nagar vs Velachery for premium bakery demand.</li>
+          <li>Show pricing gaps around high-footfall neighborhoods.</li>
+          <li>Find routes for daily delivery from a central kitchen.</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
