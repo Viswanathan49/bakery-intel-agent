@@ -27,7 +27,7 @@ The diagram above illustrates the flow of information in this demo. The Agent, p
 ## Repository Structure
 
 ```text
-launchmybakery/
+bakery-intel-agent/
 ├── data/                        # Pre-generated CSV files for BigQuery
 │   ├── demographics.csv
 │   ├── bakery_prices.csv
